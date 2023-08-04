@@ -129,41 +129,56 @@ router.get('/education', function (req, res) {
 
     main: {
       education: [
-        {
-          name: 'Школа',
-          isEnd: false,
-        },
-        {
-          name: 'СПТУ',
-          isEnd: true,
-        },
-        {
-          name: 'Університет',
-          isEnd: true,
-        },
-        {
-          name: 'IT-Brais',
-          isEnd: false,
-        },
+        { name: 'Школа', isEnd: false },
+        { name: 'СПТУ', isEnd: true },
+        { name: 'Університет', isEnd: true },
+        { name: 'IT-Brais', isEnd: false },
       ],
       certificates: [
-        {
-          name: 'Сертифікат 1',
-          id: 3,
-        },
-        {
-          name: 'Сертифікат 2',
-          id: 2,
-        },
-        {
-          name: 'Сертифікат 3',
-          id: 1,
-        },
+        { name: 'Сертифікат 1', id: 3 },
+        { name: 'Сертифікат 2', id: 2 },
+        { name: 'Сертифікат 3', id: 1 },
       ],
     },
 
     footer,
   })
 })
+
+// ================================================================
+
+//              ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/work', function (req, res) {
+  //             ↙ cюди вводимо назву файлу з сontainer
+  res.render('work', {
+    // ↙ сюди вводимо JSON дані
+
+    layout: 'big',
+
+    page: {
+      title: 'Resume | Work',
+    },
+
+    header,
+
+    main: {
+      work: [
+        {
+          position: 'Junior Fullstack Developer',
+          company: {
+            name: 'IT Brains',
+            url: 'https://it-brains.com.ua/',
+          },
+          duration: {
+            from: '10.10.2022',
+            to: '22.03.2023',
+          },
+        },
+      ],
+    },
+    footer,
+  })
+})
+
 // Підключаємо роутер до бек-енду
 module.exports = router
