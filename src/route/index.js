@@ -175,7 +175,7 @@ router.get('/work', function (req, res) {
             to: null,
           },
 
-          projectAmount: 3,
+          projectAmount: 1,
 
           projects: [
             {
@@ -183,6 +183,7 @@ router.get('/work', function (req, res) {
               url: 'https://resume.com.ua/',
               about:
                 'Airbnb competitor. High-load application for searching apartments',
+              stackAmount: 3,
               stacks: [
                 {
                   name: 'React.js',
@@ -194,6 +195,7 @@ router.get('/work', function (req, res) {
                   name: 'Nodejs',
                 },
               ],
+              awardAmount: 2,
               awards: [
                 {
                   name: 'Background verification - is a feature that provides users to prove that they are real persons',
