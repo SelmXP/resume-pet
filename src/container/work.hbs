@@ -54,9 +54,31 @@
                                 <br>
 
                                 <div>
-                                    <p>
-                                        {{stacks}}
-                                    </p>
+                                    <ul>
+                                        {{#each stacks}}
+                                            <li>
+                                                {{name}}
+                                            </li>
+                                        {{/each}}
+                                    </ul>
+                                </div>
+
+                                <br>
+                                
+                                <div>
+                                    <em>Project awards</em>
+                                </div>
+
+                                <br>
+
+                                <div>
+                                    <ul>
+                                        {{#each awards}}
+                                            <li>
+                                                {{name}}
+                                            </li>
+                                        {{/each}}
+                                    </ul>
                                 </div>
 
                             </li>
