@@ -167,7 +167,7 @@ router.get('/work', function (req, res) {
           position: 'Junior Fullstack Developer',
           company: {
             name: 'IT Brains',
-            url: 'https://it-brains.com.ua/',
+            // url: 'https://it-brains.com.ua/',
           },
           duration: {
             from: '10.10.2022',
@@ -182,7 +182,7 @@ router.get('/work', function (req, res) {
               name: 'Resume',
               url: 'https://resume.com.ua/',
               about:
-                'Render view with the given options and optional callback fn.',
+                'Airbnb competitor. High-load application for searching apartments',
               stacks: [
                 {
                   name: 'React.js',
