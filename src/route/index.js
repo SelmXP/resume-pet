@@ -171,8 +171,39 @@ router.get('/work', function (req, res) {
           },
           duration: {
             from: '10.10.2022',
-            to: '22.03.2023',
+            // to: '22.03.2023',
+            to: null,
           },
+
+          projectAmount: 3,
+
+          projects: [
+            {
+              name: 'Resume',
+              url: 'https://resume.com.ua/',
+              about:
+                'Render view with the given options and optional callback fn.',
+              stacks: [
+                {
+                  name: 'React.js',
+                },
+                {
+                  name: 'HTML / CSS',
+                },
+                {
+                  name: 'Nodejs',
+                },
+              ],
+              awards: [
+                {
+                  name: 'Background verification - is a feature that provides users to prove that they are real persons',
+                },
+                {
+                  name: 'Preparing SEO optimised pages. The automated process of getting data for the app from documents',
+                },
+              ],
+            },
+          ],
         },
       ],
     },
